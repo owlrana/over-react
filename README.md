@@ -41,3 +41,11 @@ The project includes various tools and configurations to standardize code style,
   - `npm test`: Runs all test cases.
   - `npm run test:watch`: Runs Jest in watch mode.
   - `npm run test:coverage`: Runs tests and generates a coverage report.
+
+### 6. **React Router for Routing**
+
+This project uses **React Router** for client-side routing to enable navigation between different views within the app.
+
+### 7. **React Query for APIs**
+
+This project uses **React Query** to handle server-side API requests, caching, background refetching, and synchronization with ease. React Query simplifies managing data fetched from APIs, including handling loading and error states, and caching API responses for optimized performance.
