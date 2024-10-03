@@ -1,8 +1,8 @@
 {
   "editor.formatOnSave": true,
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  },
+  "editor.tabSize": 2, // 2 spaces for indentation
+  "editor.insertSpaces": true, // Ensure spaces (not tabs) are used
+  "editor.defaultFormatter": "esbenp.prettier-vscode", // Use Prettier as the default formatter
   "eslint.validate": [
     "javascript",
     "javascriptreact",
