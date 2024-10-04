@@ -4,6 +4,8 @@ This repository provides a **React** project bootrstrapped with **TypeScript** u
 
 The project includes various tools and configurations to standardize code style, enforce best practices, and maintain code quality across teams.
 
+![](https://i.imgur.com/tGuTEqg.png)
+
 ## Features
 
 ### 1. React with TypeScript
