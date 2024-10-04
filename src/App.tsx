@@ -5,6 +5,7 @@ import UsersView from './components/views/UsersView/UsersView';
 import NavBar from './components/navigation/NavBar';
 import LanguageSwitcher from './components/LanguageSwitcher/LanguageSwitcher';
 import { LanguageProvider } from './contexts/LanguageContext';
+import FunnyCatGif from './components/CatGIFs/CatGIFs';
 
 function App() {
   return (
@@ -16,6 +17,8 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/users" element={<UsersView />} />
+            <Route path="/funny-cat-gif" element={<FunnyCatGif />} />
+            {'No Cat found!'}
           </Routes>
         </div>
       </Router>

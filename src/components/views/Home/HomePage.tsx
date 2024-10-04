@@ -10,6 +10,9 @@ const HomePage: React.FC = () => {
       <Link to="/users">
         <button>View Users</button>
       </Link>
+      <Link to="/funny-cat-gif">
+        <button>View Funny Cats</button>
+      </Link>
     </div>
   );
 };
