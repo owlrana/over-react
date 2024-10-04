@@ -49,3 +49,7 @@ This project uses **React Router** for client-side routing to enable navigation 
 ### 7. **React Query for APIs**
 
 This project uses **React Query** to handle server-side API requests, caching, background refetching, and synchronization with ease. React Query simplifies managing data fetched from APIs, including handling loading and error states, and caching API responses for optimized performance.
+
+### 8. **Translation (i18n) Support**
+
+This project supports internationalization (i18n) using i18next and react-i18next. It allows the app to handle multiple languages and dynamically switch between them.
