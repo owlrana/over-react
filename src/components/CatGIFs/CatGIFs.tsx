@@ -1,30 +1,32 @@
 import React from 'react';
+import { Card, CardContent, Button, Typography } from '@mui/material';
 import { useCatGif } from '../../hooks/useCatGIF';
 
-const FunnyCatGif: React.FC = () => {
+const CatGif: React.FC = () => {
   const { data, isLoading, isError, getNewCatGif } = useCatGif();
 
-  if (isLoading) return <div>Loading cat GIF...</div>;
-  if (isError) return <div>Error fetching cat GIF!</div>;
+  if (isLoading) return <Typography>Loading cat GIF...</Typography>;
+  if (isError) return <Typography>Error fetching cat GIF!</Typography>;
 
   return (
-    <div style={{ textAlign: 'center' }}>
-      <h1>Funny Cat GIFs</h1>
-      <div>
-        <img
-          src={data?.url}
-          alt="Funny Cat GIF"
-          style={{ maxWidth: '100%', height: 'auto', marginBottom: '20px' }}
-        />
-      </div>
-      <button
-        onClick={getNewCatGif}
-        style={{ padding: '10px 20px', fontSize: '16px' }}
-      >
-        Get Another Cat GIF
-      </button>
-    </div>
+    <Card style={{ maxWidth: 500, margin: '0 auto', textAlign: 'center' }}>
+      <CardContent>
+        <Typography variant="h5" component="div">
+          Funny Cat GIFs
+        </Typography>
+        <div style={{ margin: '20px 0' }}>
+          <img
+            src={data?.url}
+            alt="Funny Cat GIF"
+            style={{ maxWidth: '100%', height: 'auto' }}
+          />
+        </div>
+        <Button variant="contained" color="primary" onClick={getNewCatGif}>
+          Get Another Cat GIF
+        </Button>
+      </CardContent>
+    </Card>
   );
 };
 
-export default FunnyCatGif;
+export default CatGif;

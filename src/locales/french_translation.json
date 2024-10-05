@@ -1,6 +1,8 @@
 {
-  "welcome": "Bienvenue sur la page d'accueil",
-  "welcomeText": "This is the main page. Click the link below to view the list of users.",
+  "welcome": {
+    "title": "Bienvenue sur la page d'accueil",
+    "message": "This is the main page. Click the link below to view the list of users."
+  },
   "viewUsers": "Voir les utilisateurs",
   "loading": "Chargement...",
   "error": "Erreur lors du chargement des utilisateurs"

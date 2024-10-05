@@ -1,6 +1,8 @@
 {
-  "welcome": "Welcome to the Home Page",
-  "welcomeText": "This is the main page. Click the link below to view the list of users.",
+  "welcome": {
+    "title": "Welcome to the Home Page",
+    "message": "This is the main page. Click the link below to view the list of users or funny cat GIFs."
+  },
   "viewUsers": "View Users",
   "loading": "Loading...",
   "error": "Error loading users"
