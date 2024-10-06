@@ -28,7 +28,7 @@ function App() {
     <LanguageProvider>
       <ThemeProvider theme={theme}>
         <Router>
-          <NavBar />
+          <NavBar user={user} />
           <div className="App">
             {user ? (
               <Typography

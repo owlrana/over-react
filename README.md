@@ -55,3 +55,22 @@ This project uses **React Query** to handle server-side API requests, caching, b
 ### 8. **Translation (i18n) Support**
 
 This project supports internationalization (i18n) using i18next and react-i18next. It allows the app to handle multiple languages and dynamically switch between them.
+
+### 9. **Firebase support - Login, Registration and Logout **
+
+Email/Password Authentication: Enables user registration and login using email and password.
+
+Firebase SDK: The Firebase SDK is used to initialize and interact with Firebase services.
+
+Key Features:
+
+- Login: Users can log in using their email and password.
+
+- Register: New users can create an account via the registration form.
+
+- Logout: Authenticated users can log out securely, which clears their session.
+
+- Session Management: Firebase handles user session persistence automatically, allowing users to stay logged in even after refreshing the page.
+
+You can easily add more functionalities using documentation of Firebase:
+https://firebase.google.com/docs
