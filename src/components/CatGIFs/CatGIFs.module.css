@@ -1,0 +1,32 @@
+/* src/components/CatGIFs/CatGif.module.css */
+.card {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 500px;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.gifContainer {
+  margin: 20px 0;
+  flex-grow: 1;
+}
+
+.gifImage {
+  max-width: 100%;
+  max-height: 300px;
+  object-fit: contain;
+}
+
+.button {
+  margin-top: 20px;
+}

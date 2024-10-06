@@ -1,6 +1,7 @@
 import React from 'react';
-import { Card, CardContent, Button, Typography } from '@mui/material';
+import { Card, CardContent, Button, Typography, Box } from '@mui/material';
 import { useCatGif } from '../../hooks/useCatGIF';
+import styles from './CatGIFs.module.css';
 
 const CatGif: React.FC = () => {
   const { data, isLoading, isError, getNewCatGif } = useCatGif();
@@ -9,19 +10,24 @@ const CatGif: React.FC = () => {
   if (isError) return <Typography>Error fetching cat GIF!</Typography>;
 
   return (
-    <Card style={{ maxWidth: 500, margin: '0 auto', textAlign: 'center' }}>
-      <CardContent>
+    <Card className={styles.card}>
+      <CardContent className={styles.cardContent}>
         <Typography variant="h5" component="div">
           Funny Cat GIFs
         </Typography>
-        <div style={{ margin: '20px 0' }}>
+        <Box className={styles.gifContainer}>
           <img
             src={data?.url}
             alt="Funny Cat GIF"
-            style={{ maxWidth: '100%', height: 'auto' }}
+            className={styles.gifImage}
           />
-        </div>
-        <Button variant="contained" color="primary" onClick={getNewCatGif}>
+        </Box>
+        <Button
+          variant="contained"
+          color="primary"
+          onClick={getNewCatGif}
+          className={styles.button}
+        >
           Get Another Cat GIF
         </Button>
       </CardContent>
